@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!-- declares the document type the browser will use, and version -->
+<html lang="en" dir="ltr">  <!-- tells browser that everything inbetween opening and closing tag is html. Consits of Head and Body-->
+
+<head> <!-- holds information about the webpage, and tells browser how it should handle the page -->
+  <meta charset="utf-8"> <!-- "Meta" gives extra associated data to html document {how it should render or display the page} , this one in particular is telling browser this html code is encoded with "UTF-8" ****Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.**** -->
+    <!-- **** if wrong reading language is used to decode a website, it will appear as a jumble of letters due to being assigned differennt symbols to different positions -->
+  <Meta name="description" content="Cristophers first Personal Website"> <!-- contains information on what search engines display about my website -->
+  <title>Cristopher's Personal Site</title> <!-- says the title of particular page -->
+</head>
+
+<body><!-- the content holder of the page -->
+  <table cellspacing="20"> <!-- creates a table with rows and cells --> <!-- tables keep data organized and indented at equal spacing as long as the rows are within the same table -->
+    <!-- tables can contain subtables within rows or cells, usefull to have border around original table but not content within, **Not really necessary when using CSS -->
+    <tr>
+      <td><img src="images/cristopher.jpg" alt="my profile picture" width="200"></td> <!-- you can either grab a picture from a website using the full url, or from a file directly in the same folder as the website / alt= can be used to describe a picture when it can't be fetched for preview;google uses this for example when optimizing search results, if you have a picture of a burrito and the alt description says burrito wrap recipe, this helps google find the image" -->
+      <!-- width and height can be used to adjust size of picture. if only one is used, the image will adjust the other value to match first. You can use both to specify different dimensions if desired -->
+      <td>
+        <h1> Cristopher Enciso</h1>
+        <p><em>Founder and Creator of <strong>This Personal Website</strong></em></p> <!-- <i> </i> simply italicizes/styles the text ***** While <em> </em> tells the browser that the words between it should be stressed or emphasized  -->
+        <br> <!-- reqires no end brackets, and puts a space between content, (acts as {ENTER}) --> <!-- <i> and <b> simply style, <em> changes the meaning of a word in a sentence and as a result the sentence itself IE; <i>Queen Mary</i> is the queen namned Mary while <em> Queen Mary </em> could be used for the name of a ship, the same as speaking in emphasis, while <strong> gives a stronger importance to a word IE; DANGER while <b> just bolds danger with no extra importance. -->
+        <p>This is just a quick summary. I am a beginner programer who is very interested in learning to code for web development, and eventually branch out into other forms of coding, primarily as a hobby.</p>
+        <p>I will probably update this in the future with extra and more professional information if i ever plan on using this as my CV. this was mainly used for testing code purposes.</p>
+      </td>
+    </tr>
+  </table>
+  <hr> <!-- (horizontal rule) requires no end brackets, adds a rule or line to the html code. "size" affects the size of the rule, while "noshade" removes shader from the rule-->
+<!-- Size, noshade, lang, dir, charset are all examples of attributes-->
+  <h3>Education</h3>
+  <ul>
+    <li> <a href="https://www.hccfl.edu/">Hillsborough Community college</a> <!-- start attribute dictates which number to start from, where as type attribute can change it into roman numerals, if using <ol> </ol> -->
+      <ul>
+        <li>studied business for 2 years
+          <ul>
+            <li>then i stopped, to move on to bigger and better things</li>
+          </ul>
+    </li>
+  </ul>
+  </li>
+  <li><a href="https://www.vivint.com/">Vivint</a> <!-- The HTML <a> element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each <a> should indicate the link's destination. -->
+    <ul>
+      <li>door to door
+        <ul>
+          <li>smart home security</li>
+        </ul>
+      </li>
+      <li>self improvement
+        <ul>
+          <li>books</li>
+          <li>habits</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead> <!-- header used to define row names, helpful to isolate header from body when giving different structure to header row usually bolded -->
+      <tr> <!-- creates a row for the table -->
+        <th>Dates</th> <!-- used to name table header, auto bolds by default -->
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody> <!-- used for the main content held within the columns of each row -->
+      <tr>
+        <td>2010-2013</td> <!-- creates a cell for the row within the table -->
+        <td>Nielsen</td>
+      </tr>
+      <tr>
+        <td>2013-Current</td>
+        <td>My own thing</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+<table border="1">
+<tbody>
+  <tr>
+    <td>
+      <table cellspacing="10">
+        <tr>
+          <td>Web Development</td>
+          <td>★☆☆☆☆</td>
+        </tr>
+        <tr>
+          <td>AutoHotkey</td>
+          <td>★☆☆☆☆</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table cellspacing="10">
+        <tr>
+          <td>Sells</td>
+          <td>★★☆☆☆</td>
+        </tr>
+        <tr>
+          <td>Network Marketing</td>
+          <td>★☆☆☆☆</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</table>
+  <hr>
+  <table>
+    <p>Link to:<a href="contact info.html">Contact Info</a></p>
+    <p>Link to:<a href="Hobbies.html">My Hobbies</a></p>
+    </tbody>
+  </table>
+</body>
+
+</html>
